@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Series - Watch Sonke</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="container header-container">
+        <a href="index.html" class="logo">Watch Sonke</a>
+        <button class="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="series.html" class="active">Series</a></li>
+            </ul>
+        </nav>
+        <div class="nav-buttons">
+            <button class="btn btn-ghost">Sign In</button>
+            <button class="btn btn-primary">Join Now</button>
+        </div>
+    </div>
+</header>
+
+<!-- Featured Series Section -->
+<section class="detail-hero">
+    <div class="detail-backdrop" style="position: relative; width: 100%; padding-bottom: 56.25%;">
+        <iframe 
+          src="https://www.youtube.com/embed/eqcGFm2FFpA?autoplay=1&mute=1&loop=1&playlist=1zgxDFEifyI"
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; object-fit: contain;">
+        </iframe>
+      </div>   
+    
+    <div class="container">
+        <div class="detail-hero-content">
+            <div class="detail-poster">
+                <img src="pictures/series pictures/QueenSono.jpeg" alt="Queen Sono Poster">
+                <div class="rental-badge detail-rental">
+                    <span class="rental-price">R35 / Week</span>
+                </div>
+            </div>
+            
+            <div class="detail-info">
+                <h1 class="detail-title">Queen Sono</h1>
+                
+                <div class="detail-meta">
+                    <span class="detail-year">2020</span>
+                    <span class="detail-duration">Season 1 (6 episodes)</span>
+                    <span class="detail-rating">16+</span>
+                    <span class="detail-genre">Crime, Drama, Action</span>
+                </div>
+                
+                <div class="detail-actions">
+                    <a href="../series/queen-sono.html">
+                    <button class="btn btn-primary btn-large">
+                        <i class="fas fa-shopping-cart"></i> Rent Now
+                    </button>
+                    </a>
+                    <button class="btn btn-outline btn-large">
+                        <i class="fas fa-plus"></i> Add to Wishlist
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Filter Tabs -->
+<section class="filter-section">
+    <div class="container">
+        <div class="filter-tabs">
+            <div class="filter-tab active" data-genre="all">All</div>
+            <div class="filter-tab" data-genre="drama">Drama</div>
+            <div class="filter-tab" data-genre="comedy">Comedy</div>
+            <div class="filter-tab" data-genre="crime">Crime</div>
+            <div class="filter-tab" data-genre="new-releases">New Releases</div>
+        </div>
+    </div>
+</section>
+
+<!-- All Series Section -->
+<section id="all" class="section genre-section">
+    <div class="container">
+        <h2 class="section-title">All Series</h2>
+        
+        <div class="scroll-wrapper">
+            <div class="scroll-hint scroll-hint-left">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            
+            <div class="scroll-container">
+                <div class="scrollable-content">
+                    <a href="../series/queen-sono.html" class="movie-card">
+                        <div class="rental-tag">R35</div>
+                        <img src="pictures/series pictures/QueenSono.jpeg" alt="Queen Sono">
+                        <div class="movie-info">
+                            <h3 class="movie-title">Queen Sono</h3>
+                            <p class="movie-year">2020</p>
+                        </div>
+                    </a>
+                    <a href="../series/blood-and-water.html" class="movie-card">
+                        <div class="rental-tag">R30</div>
+                        <img src="pictures/series pictures/BloodAndWater.jpeg" alt="Blood & Water">
+                        <div class="movie-info">
+                            <h3 class="movie-title">Blood & Water</h3>
+                            <p class="movie-year">2020</p>
+                        </div>
+                    </a>
+                    <a href="../series/diepe-waters.html" class="movie-card">
+                        <div class="rental-tag">R35</div>
+                        <img src="pictures/series pictures/Shadow.jpeg" alt="Diepe waters">
+                        <div class="movie-info">
+                            <h3 class="movie-title">Diepe Waters</h3>
+                            <p class="movie-year">2019</p>
+                        </div>
+                    </a>
+                    <a href="../series/trackers.html" class="movie-card">
+                        <div class="rental-tag">R30</div>
+                        <img src="pictures/series pictures/Trackers.jpeg" alt="Trackers">
+                        <div class="movie-info">
+                            <h3 class="movie-title">Trackers</h3>
+                            <p class="movie-year">2019</p>
+                        </div>
+                    </a>
+                    <a href="../series/savage-beauty.html" class="movie-card">
+                        <div class="rental-tag">R35</div>
+                        <img src="pictures/series pictures/SavageBeauty.jpeg" alt="Savage Beauty">
+                        <div class="movie-info">
+                            <h3 class="movie-title">Savage Beauty</h3>
+                            <p class="movie-year">2022</p>
+                        </div>
+                    </a>
+                    <a href="../series/how-to-ruin-christmas.html" class="movie-card">
+                        <div class="rental-tag">R30</div>
+                        <img src="pictures/series pictures/HowToRuin.jpeg" alt="How to Ruin Christmas">
+                        <div class="movie-info">
+                            <h3 class="movie-title">How to Ruin Christmas</h3>
+                            <p class="movie-year">2020</p>
+                        </div>
+                    </a>
+                    <a href="../series/reyka.html" class="movie-card">
+                        <div class="rental-tag">R30</div>
+                        <img src="pictures/series pictures/Reyka.jpeg" alt="Reyka">
+                        <div class="movie-info">
+                            <h3 class="movie-title">Reyka</h3>
+                            <p class="movie-year">2021</p>
+                        </div>
+                    </a>
+                    <a href="../series/talis-wedding-diary.html" class="movie-card">
+                        <div class="rental-tag">R25</div>
+                        <img src="pictures/series pictures/Tali.jpeg" alt="Tali's Wedding Diary">
+                        <div class="movie-info">
+                            <h3 class="movie-title">Tali's Wedding Diary</h3>
+                            <p class="movie-year">2017</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="scroll-hint scroll-hint-right">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Drama Section -->
+<section id="drama" class="section genre-section">
+    <div class="container">
+        <h2 class="section-title">Drama</h2>
+        
+        <div class="scroll-wrapper">
+            <div class="scroll-hint scroll-hint-left">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            
+            <div class="scroll-container">
+                <div class="scrollable-content">
+                    <a href="../series/blood-and-water.html" class="movie-card">
+                        <div class="rental-tag">R30</div>
+                        <img src="pictures/series pictures/BloodAndWater.jpeg" alt="Blood & Water">
+                        <div class="movie-info">
+                            <h3 class="movie-title">Blood & Water</h3>
+                            <p class="movie-year">2020</p>
+                        </div>
+                    </a>
+                    <a href="../series/savage-beauty.html" class="movie-card">
+                        <div class="rental-tag">R35</div>
+                        <img src="pictures/series pictures/SavageBeauty.jpeg" alt="Savage Beauty">
+                        <div class="movie-info">
+                            <h3 class="movie-title">Savage Beauty</h3>
+                            <p class="movie-year">2022</p>
+                        </div>
+                    </a>
+                    <a href="../series/reyka.html" class="movie-card">
+                        <div class="rental-tag">R30</div>
+                        <img src="pictures/series pictures/Reyka.jpeg" alt="Reyka">
+                        <div class="movie-info">
+                            <h3 class="movie-title">Reyka</h3>
+                            <p class="movie-year">2021</p>
+                        </div>
+                    </a>
+                    <a href="../series/shaka-ilembe.html" class="movie-card">
+                        <div class="rental-tag">R30</div>
+                        <img src="pictures/series pictures/Shaka.jpeg" alt="Shaka Ilembe">
+                        <div class="movie-info">
+                            <h3 class="movie-title">Shaka Ilembe</h3>
+                            <p class="movie-year">2023</p>
+                        </div>
+                    </a>
+                    <a href="../series/diepe-waters.html" class="movie-card">
+                        <div class="rental-tag">R30</div>
+                        <img src="pictures/series pictures/Diepe.jpeg" alt="Diepe Waters">
+                        <div class="movie-info">
+                            <h3 class="movie-title">Diepe Waters</h3>
+                            <p class="movie-year">2018</p>
+                        </div>
+                    </a>
+                    <a href="../series/family-secrets.html" class="movie-card">
+                        <div class="rental-tag">R30</div>
+                        <img src="pictures/series pictures/Family%20Secrets.jpeg" alt="Family Secrets">
+                        <div class="movie-info">
+                            <h3 class="movie-title">Family Secrets</h3>
+                            <p class="movie-year">2019</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="scroll-hint scroll-hint-right">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Comedy Section -->
+<section id="comedy" class="section genre-section">
+    <div class="container">
+        <h2 class="section-title">Comedy</h2>
+        
+        <div class="scroll-wrapper">
+            <div class="scroll-hint scroll-hint-left">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            
+            <div class="scroll-container">
+                <div class="scrollable-content">
+                    <a href="../series/how-to-ruin-christmas.html" class="movie-card">
+                        <div class="rental-tag">R30</div>
+                        <img src="pictures/series pictures/HowToRuin.jpeg" alt="How to Ruin Christmas">
+                        <div class="movie-info">
+                            <h3 class="movie-title">How to Ruin Christmas</h3>
+                            <p class="movie-year">2020</p>
+                        </div>
+                    </a>
+                    <a href="../series/talis-wedding-diary.html" class="movie-card">
+                        <div class="rental-tag">R25</div>
+                        <img src="pictures/series pictures/Tali.jpeg" alt="Tali's Wedding Diary">
+                        <div class="movie-info">
+                            <h3 class="movie-title">Tali's Wedding Diary</h3>
+                            <p class="movie-year">2017</p>
+                        </div>
+                    </a>
+                    <a href="../series/family-secrets.html" class="movie-card">
+                        <div class="rental-tag">R25</div>
+                        <img src="pictures/series pictures/Family Secrets.jpeg" alt="Family Secrets">
+                        <div class="movie-info">
+                            <h3 class="movie-title">Family Secrets</h3>
+                            <p class="movie-year">2022</p>
+                        </div>
+                    </a>
+                    <a href="../series/seriously-single.html" class="movie-card">
+                        <div class="rental-tag">R25</div>
+                        <img src="pictures/series pictures/SeriouslySingle.jpeg" alt="Seriously Single">
+                        <div class="movie-info">
+                            <h3 class="movie-title">Seriously Single</h3>
+                            <p class="movie-year">2020</p>
+                        </div>
+                    </a>
+                    <a href="../series/tripping-with-skhumba.html" class="movie-card">
+                        <div class="rental-tag">R25</div>
+                        <img src="pictures/series pictures/TrippingWithSkhumba.jpeg" alt="Trippin With Skhumba">
+                        <div class="movie-info">
+                            <h3 class="movie-title">Trippin With Skhumba</h3>
+                            <p class="movie-year">2019</p>
+                        </div>
+                    </a>
+                    <a href="../series/dead-places.html" class="movie-card">
+                        <div class="rental-tag">R30</div>
+                        <img src="pictures/series pictures/LovingThokoza.jpeg" alt="Loving Thokoza">
+                        <div class="movie-info">
+                            <h3 class="movie-title">Loving Thokoza</h3>
+                            <p class="movie-year">2020</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="scroll-hint scroll-hint-right">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Crime Section -->
+<section id="crime" class="section genre-section">
+    <div class="container">
+        <h2 class="section-title">Crime</h2>
+        
+        <div class="scroll-wrapper">
+            <div class="scroll-hint scroll-hint-left">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            
+            <div class="scroll-container">
+                <div class="scrollable-content">
+                    <a href="../series/queen-sono.html" class="movie-card">
+                        <div class="rental-tag">R35</div>
+                        <img src="pictures/series pictures/QueenSono.jpeg" alt="Queen Sono">
+                        <div class="movie-info">
+                            <h3 class="movie-title">Queen Sono</h3>
+                            <p class="movie-year">2020</p>
+                        </div>
+                    </a>
+                    <a href="../series/shaka-ilembe.html" class="movie-card">
+                        <div class="rental-tag">R35</div>
+                        <img src="pictures/series pictures/Shaka.jpeg" alt="Shaka Ilembe">
+                        <div class="movie-info">
+                            <h3 class="movie-title">Shaka Ilembe</h3>
+                            <p class="movie-year">2019</p>
+                        </div>
+                    </a>
+                    <a href="../series/trackers.html" class="movie-card">
+                        <div class="rental-tag">R30</div>
+                        <img src="pictures/series pictures/Trackers.jpeg" alt="Trackers">
+                        <div class="movie-info">
+                            <h3 class="movie-title">Trackers</h3>
+                            <p class="movie-year">2019</p>
+                        </div>
+                    </a>
+                    <a href="../series/reyka.html" class="movie-card">
+                        <div class="rental-tag">R30</div>
+                        <img src="pictures/series pictures/Reyka.jpeg" alt="Reyka">
+                        <div class="movie-info">
+                            <h3 class="movie-title">Reyka</h3>
+                            <p class="movie-year">2021</p>
+                        </div>
+                    </a>
+                    <a href="../series/dead-places.html" class="movie-card">
+                        <div class="rental-tag">R30</div>
+                        <img src="pictures/series pictures/Dead.jpeg" alt="Dead Places">
+                        <div class="movie-info">
+                            <h3 class="movie-title">Dead Places</h3>
+                            <p class="movie-year">2021</p>
+                        </div>
+                    </a>
+                    <a href="../series/queen-sono.html" class="movie-card">
+                        <div class="rental-tag">R30</div>
+                        <img src="pictures/series pictures/KingsOfjoburg.jpeg" alt="Kings of Joburg">
+                        <div class="movie-info">
+                            <h3 class="movie-title">Kings of Joburg</h3>
+                            <p class="movie-year">2020</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="scroll-hint scroll-hint-right">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- New Releases Section -->
+<section id="new-releases" class="section genre-section">
+    <div class="container">
+        <h2 class="section-title">New Releases</h2>
+        
+        <div class="scroll-wrapper">
+            <div class="scroll-hint scroll-hint-left">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            
+            <div class="scroll-container">
+                <div class="scrollable-content">
+                    <a href="../series/savage-beauty.html" class="movie-card">
+                        <div class="rental-tag">R35</div>
+                        <img src="pictures/series pictures/SavageBeauty.jpeg" alt="Savage Beauty">
+                        <div class="movie-info">
+                            <h3 class="movie-title">Savage Beauty</h3>
+                            <p class="movie-year">2022</p>
+                        </div>
+                    </a>
+                    <a href="../series/reyka.html" class="movie-card">
+                        <div class="rental-tag">R30</div>
+                        <img src="pictures/series pictures/Reyka.jpeg" alt="Reyka">
+                        <div class="movie-info">
+                            <h3 class="movie-title">Reyka</h3>
+                            <p class="movie-year">2021</p>
+                        </div>
+                    </a>
+                    <a href="../series/family-secrets.html" class="movie-card">
+                        <div class="rental-tag">R25</div>
+                        <img src="pictures/series pictures/Family Secrets.jpeg" alt="Family Secrets">
+                        <div class="movie-info">
+                            <h3 class="movie-title">Family Secrets</h3>
+                            <p class="movie-year">2022</p>
+                        </div>
+                    </a>
+                    <a href="../series/shaka-ilembe.html" class="movie-card">
+                        <div class="rental-tag">R30</div>
+                        <img src="pictures/series pictures/Shaka.jpeg" alt="Shaka Ilembe">
+                        <div class="movie-info">
+                            <h3 class="movie-title">Shaka Ilembe</h3>
+                            <p class="movie-year">2023</p>
+                        </div>
+                    </a>
+                    <a href="../series/dead-places.html" class="movie-card">
+                        <div class="rental-tag">R30</div>
+                        <img src="pictures/series pictures/Dead.jpeg" alt="Dead Places">
+                        <div class="movie-info">
+                            <h3 class="movie-title">Dead Places</h3>
+                            <p class="movie-year">2021</p>
+                        </div>
+                    </a>
+                    <a href="../series/diepe-waters.html" class="movie-card">
+                        <div class="rental-tag">R30</div>
+                        <img src="pictures/series pictures/KingsOfjoburg.jpeg" alt="Kings of Joburg">
+                        <div class="movie-info">
+                            <h3 class="movie-title">Kings of Joburg</h3>
+                            <p class="movie-year">2020</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="scroll-hint scroll-hint-right">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container footer-container">
+        <p class="copyright">© 2025 Watch Sonke. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#" class="footer-link">Terms</a>
+            <a href="#" class="footer-link">Privacy</a>
+            <a href="#" class="footer-link">Contact</a>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+<style>
+    /* Add this to your CSS to maintain card appearance when wrapped in links */
+    .card-link {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+    }
+    
+    .card-link:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    /* Optional hover effect to indicate clickability */
+    .card-link:hover .movie-card {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+    }
+    </style
+</body>
+</html>
