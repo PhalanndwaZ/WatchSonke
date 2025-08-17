@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Detail Wireframe - Watch Sonke</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .wireframe {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #ddd;
+            border: 2px solid #999;
+            margin-bottom: 20px;
+        }
+        .logo {
+            font-weight: bold;
+            font-size: 24px;
+        }
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .button {
+            padding: 8px 16px;
+            background-color: #bbb;
+            border: 1px solid #999;
+            border-radius: 4px;
+        }
+        .hero-backdrop {
+            height: 500px;
+            background-color: #ddd;
+            border: 2px solid #999;
+            margin-bottom: 0;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .content-header {
+            background-color: #eee;
+            border: 2px solid #999;
+            padding: 30px 20px;
+            margin-bottom: 30px;
+        }
+        .content-container {
+            display: flex;
+            gap: 30px;
+        }
+        .content-poster {
+            width: 300px;
+            height: 450px;
+            background-color: #ddd;
+            border: 2px solid #999;
+            margin-top: -100px;
+            position: relative;
+            flex-shrink: 0;
+        }
+        .content-info {
+            flex: 1;
+        }
+        .section-header {
+            margin: 30px 0 20px;
+        }
+        .trailer-container {
+            height: 400px;
+            background-color: #ddd;
+            border: 2px solid #999;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .detail-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .detail-card {
+            background-color: #ddd;
+            border: 2px solid #999;
+            padding: 20px;
+            height: 200px;
+        }
+        .scroll-container {
+            display: flex;
+            gap: 15px;
+            overflow-x: auto;
+            padding: 10px 0;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        .movie-card {
+            width: 180px;
+            height: 300px;
+            background-color: #ddd;
+            border: 2px solid #999;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .scroll-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            background-color: #bbb;
+            border: 1px solid #999;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .arrow-left {
+            left: -20px;
+        }
+        .arrow-right {
+            right: -20px;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #ddd;
+            border: 2px solid #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="wireframe">
+        <div class="header">
+            <div class="logo">LOGO</div>
+            <div class="nav">
+                <div>Home</div>
+                <div>Discover</div>
+                <div>Movies</div>
+                <div>Series</div>
+            </div>
+            <div class="buttons">
+                <div class="button">Sign In</div>
+                <div class="button">Join Now</div>
+            </div>
+        </div>
+
+        <div class="hero-backdrop">
+            Movie Trailer/Backdrop
+        </div>
+
+        <div class="content-header">
+            <div class="content-container">
+                <div class="content-poster">
+                    Movie Poster
+                </div>
+                <div class="content-info">
+                    <h1>Movie Title</h1>
+                    <div>2023 | 120 min | Action, Drama | 16+</div>
+                    <div>Rating: 4.5/5 (120 ratings)</div>
+                    <p>Movie description would go here. This is a detailed synopsis of the movie that gives viewers an idea of what the movie is about without spoiling the plot.</p>
+                    <div class="button">Rent Now</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-header">
+            <h2>Details</h2>
+        </div>
+
+        <div class="detail-grid">
+            <div class="detail-card">Cast</div>
+            <div class="detail-card">Crew</div>
+            <div class="detail-card">Awards</div>
+            <div class="detail-card">Rental Information</div>
+        </div>
+
+        <div class="section-header">
+            <h2>You May Also Like</h2>
+        </div>
+
+        <div class="scroll-container">
+            <div class="scroll-arrow arrow-left">&lt;</div>
+            <div class="movie-card">Movie 1</div>
+            <div class="movie-card">Movie 2</div>
+            <div class="movie-card">Movie 3</div>
+            <div class="movie-card">Movie 4</div>
+            <div class="movie-card">Movie 5</div>
+            <div class="movie-card">Movie 6</div>
+            <div class="scroll-arrow arrow-right">&gt;</div>
+        </div>
+
+        <div class="footer">
+            <div>© 2025 Watch Sonke</div>
+            <div>
+                <span>Terms</span> | 
+                <span>Privacy</span> | 
+                <span>Contact</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
