@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Watch Sonke</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Watch Sonke</a>
+            <button class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="movies/movies.html">Movies</a></li>
+                    <li><a href="series/series.html">Series</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="payment-container">
+            <div class="payment-header">
+                <h1 class="payment-title">Complete Your Rental</h1>
+                <p class="payment-subtitle">You're just a few steps away from enjoying your selection</p>
+            </div>
+            
+            <div class="payment-content">
+                <div class="payment-summary">
+                    <h2 class="summary-title">Order Summary</h2>
+                    
+                    <div class="summary-item">
+                        <span class="summary-label">Title:</span>
+                        <span class="summary-value" id="content-title">Loading...</span>
+                    </div>
+                    
+                    <div class="summary-item">
+                        <span class="summary-label">Type:</span>
+                        <span class="summary-value" id="content-type">Loading...</span>
+                    </div>
+                    
+                    <div class="summary-item">
+                        <span class="summary-label">Rental Period:</span>
+                        <span class="summary-value" id="rental-period">Loading...</span>
+                    </div>
+                    
+                    <div class="summary-item">
+                        <span class="summary-label">Price:</span>
+                        <span class="summary-value" id="rental-price">Loading...</span>
+                    </div>
+                    
+                    <div class="summary-item summary-total">
+                        <span class="summary-label">Total:</span>
+                        <span class="summary-value" id="total-price">Loading...</span>
+                    </div>
+                </div>
+                
+                <div class="payment-form">
+                    <h2 class="form-title">Payment Details</h2>
+                    
+                    <div class="payment-methods">
+                        <div class="payment-method active">
+                            <div class="payment-method-icon">
+                                <i class="fas fa-credit-card"></i>
+                            </div>
+                            <span>Credit Card</span>
+                        </div>
+                        
+                        <div class="payment-method">
+                            <div class="payment-method-icon">
+                                <i class="fab fa-paypal"></i>
+                            </div>
+                            <span>PayPal</span>
+                        </div>
+                        
+                        <div class="payment-method">
+                            <div class="payment-method-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <span>Mobile Payment</span>
+                        </div>
+                    </div>
+                    
+                    <form id="payment-form">
+                        <div class="form-group">
+                            <label for="card-name" class="form-label">Cardholder Name</label>
+                            <input type="text" id="card-name" class="form-input" placeholder="John Doe" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="card-number" class="form-label">Card Number</label>
+                            <input type="text" id="card-number" class="form-input" placeholder="1234 5678 9012 3456" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="expiry-date" class="form-label">Expiry Date</label>
+                                    <input type="text" id="expiry-date" class="form-input" placeholder="MM/YY" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="cvv" class="form-label">CVV</label>
+                                    <input type="text" id="cvv" class="form-input" placeholder="123" required>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" class="form-input" placeholder="your@email.com" required>
+                        </div>
+                        
+                        <div class="payment-actions">
+                            <button type="submit" class="btn btn-primary btn-large">Complete Payment</button>
+                        </div>
+                        
+                        <p class="payment-note">Your payment information is encrypted and secure. We do not store your credit card details.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <p class="copyright">© 2023 Watch Sonke. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Terms</a>
+                <a href="#" class="footer-link">Privacy</a>
+                <a href="#" class="footer-link">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script>
+        // Get URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const movieParam = urlParams.get('movie');
+        const seriesParam = urlParams.get('series');
+        const priceParam = urlParams.get('price');
+        
+        // Set content details based on parameters
+        document.addEventListener('DOMContentLoaded', function() {
+            let contentTitle = '';
+            let contentType = '';
+            let rentalPeriod = '';
+            let price = 0;
+            
+            if (movieParam) {
+                contentType = 'Movie';
+                rentalPeriod = '3 days';
+                
+                // Set title based on movie parameter
+                switch(movieParam) {
+                    case 'tsotsi':
+                        contentTitle = 'Tsotsi';
+                        break;
+                    case 'district-9':
+                        contentTitle = 'District 9';
+                        break;
+                    case 'yesterday':
+                        contentTitle = 'Yesterday';
+                        break;
+                    case 'mandela':
+                        contentTitle = 'Mandela: Long Walk to Freedom';
+                        break;
+                    case 'life-above-all':
+                        contentTitle = 'Life, Above All';
+                        break;
+                    case 'invictus':
+                        contentTitle = 'Invictus';
+                        break;
+                    default:
+                        contentTitle = movieParam.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+                }
+            } else if (seriesParam) {
+                contentType = 'Series';
+                rentalPeriod = '1 week';
+                
+                // Set title based on series parameter
+                switch(seriesParam) {
+                    case 'queen-sono':
+                        contentTitle = 'Queen Sono';
+                        break;
+                    case 'blood-and-water':
+                        contentTitle = 'Blood & Water';
+                        break;
+                    case 'shadow':
+                        contentTitle = 'Shadow';
+                        break;
+                    case 'trackers':
+                        contentTitle = 'Trackers';
+                        break;
+                    case 'savage-beauty':
+                        contentTitle = 'Savage Beauty';
+                        break;
+                    default:
+                        contentTitle = seriesParam.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+                }
+            }
+            
+            // Set price from parameter or default
+            price = priceParam ? parseInt(priceParam) : 25;
+            
+            // Update the DOM
+            document.getElementById('content-title').textContent = contentTitle;
+            document.getElementById('content-type').textContent = contentType;
+            document.getElementById('rental-period').textContent = rentalPeriod;
+            document.getElementById('rental-price').textContent = `R${price}`;
+            document.getElementById('total-price').textContent = `R${price}`;
+            
+            // Update page title
+            document.title = `Rent ${contentTitle} - Watch Sonke`;
+            
+            // Handle payment method selection
+            const paymentMethods = document.querySelectorAll('.payment-method');
+            paymentMethods.forEach(method => {
+                method.addEventListener('click', function() {
+                    // Remove active class from all methods
+                    paymentMethods.forEach(m => m.classList.remove('active'));
+                    // Add active class to clicked method
+                    this.classList.add('active');
+                });
+            });
+            
+            // Handle form submission
+            document.getElementById('payment-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert(`Payment successful! You can now enjoy ${contentTitle}.`);
+                window.location.href = 'index.html';
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies - Watch Sonke</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="container header-container">
+        <a href="index.html" class="logo">Watch Sonke</a>
+        <button class="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="movies.html" class="active">Movies</a></li>
+                <li><a href="series.html">Series</a></li>
+            </ul>
+        </nav>
+        <div class="nav-buttons">
+            <button class="btn btn-ghost">Sign In</button>
+            <button class="btn btn-primary">Join Now</button>
+        </div>
+    </div>
+</header>
+
+<!-- Featured Movie Section -->
+<section class="detail-hero">
+    <div class="detail-backdrop" style="position: relative; width: 100%; padding-bottom: 56.25%;">
+        <iframe 
+          src="https://www.youtube.com/embed/eqcGFm2FFpA?autoplay=1&mute=1&loop=1&playlist=eqcGFm2FFpA"
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; object-fit: contain;">
+        </iframe>
+      </div>      
+      
+    
+    <div class="container">
+        <div class="detail-hero-content">
+            <div class="detail-poster">
+                <img src="pictures\movies pictures\Tsotsi.jpeg" alt="Tsotsi Poster">
+                <div class="rental-badge detail-rental">
+                    <span class="rental-price">R30 / 3 days</span>
+                </div>
+            </div>
+            
+            <div class="detail-info">
+                <h1 class="detail-title">Tsotsi</h1>
+                
+                <div class="detail-meta">
+                    <span class="detail-year">2005</span>
+                    <span class="detail-duration">94 min</span>
+                    <span class="detail-rating">16+</span>
+                    <span class="detail-genre">Crime, Drama</span>
+                </div>
+                
+                <div class="detail-actions">
+                    <a href="../movies/tsotsi.html">
+                    <button class="btn btn-primary btn-large">
+                        <i class="fas fa-shopping-cart"></i> Rent Now
+                    </button>
+                    </a>
+                    <button class="btn btn-outline btn-large">
+                        <i class="fas fa-plus"></i> Add to Wishlist
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Filter Tabs -->
+<section class="filter-section">
+    <div class="container">
+        <div class="filter-tabs">
+            <div class="filter-tab active" data-genre="all">All</div>
+            <div class="filter-tab" data-genre="drama">Drama</div>
+            <div class="filter-tab" data-genre="comedy">Comedy</div>
+            <div class="filter-tab" data-genre="action">Action</div>
+            <div class="filter-tab" data-genre="award-winning">Award Winning</div>
+        </div>
+    </div>
+</section>
+
+<!-- All Movies Section -->
+<section id="all" class="section genre-section">
+    <div class="container">
+        <h2 class="section-title">All Movies</h2>
+        
+        <div class="scroll-wrapper">
+            <div class="scroll-hint scroll-hint-left">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            
+            <div class="scroll-container">
+                <div class="scrollable-content">
+                    <div class="movie-card">
+                        <a href="../movies/tsotsi.html" class="card-link">
+                            <div class="rental-tag">R30</div>
+                            <img src="pictures\movies pictures\Tsotsi.jpeg" alt="Tsotsi">
+                            <div class="movie-info">
+                                <h3 class="movie-title">Tsotsi</h3>
+                                <p class="movie-year">2005</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="movie-card">
+                        <a href="../movies/district-9.html" class="card-link">
+                            <div class="rental-tag">R25</div>
+                            <img src="pictures\movies pictures\District9.jpeg" alt="District 9">
+                            <div class="movie-info">
+                                <h3 class="movie-title">District 9</h3>
+                                <p class="movie-year">2009</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="movie-card">
+                        <a href="../movies/yesterday.html" class="card-link">
+                            <div class="rental-tag">R20</div>
+                            <img src="pictures\movies pictures\yesterday.jpeg" alt="Yesterday">
+                            <div class="movie-info">
+                                <h3 class="movie-title">Yesterday</h3>
+                                <p class="movie-year">2004</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="movie-card">
+                        <a href="../movies/mandela-long-walk-to-freedom.html" class="card-link">
+                            <div class="rental-tag">R25</div>
+                            <img src="pictures\movies pictures\mandela.jpeg" alt="Mandela: Long Walk to Freedom">
+                            <div class="movie-info">
+                                <h3 class="movie-title">Mandela: Long Walk to Freedom</h3>
+                                <p class="movie-year">2013</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="movie-card">
+                        <a href="../movies/life-above-all.html" class="card-link">
+                            <div class="rental-tag">R20</div>
+                            <img src="pictures\movies pictures\LifeAboveAll.jpeg" alt="Life, Above All">
+                            <div class="movie-info">
+                                <h3 class="movie-title">Life, Above All</h3>
+                                <p class="movie-year">2010</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="movie-card">
+                        <a href="../movies/invictus.html" class="card-link">
+                            <div class="rental-tag">R25</div>
+                            <img src="pictures\movies pictures\Invictus.jpeg" alt="Invictus">
+                            <div class="movie-info">
+                                <h3 class="movie-title">Invictus</h3>
+                                <p class="movie-year">2009</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="movie-card">
+                        <a href="../movies/material.html" class="card-link">
+                            <div class="rental-tag">R25</div>
+                            <img src="pictures\movies pictures\Material.jpeg" alt="Material">
+                            <div class="movie-info">
+                                <h3 class="movie-title">Material</h3>
+                                <p class="movie-year">2012</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="movie-card">
+                        <a href="../movies/white-wedding.html" class="card-link">
+                            <div class="rental-tag">R20</div>
+                            <img src="pictures\movies pictures\WhiteWedding.jpeg" alt="White Wedding">
+                            <div class="movie-info">
+                                <h3 class="movie-title">White Wedding</h3>
+                                <p class="movie-year">2009</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-hint scroll-hint-right">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Drama Section -->
+<section id="drama" class="section genre-section">
+    <div class="container">
+        <h2 class="section-title">Drama</h2>
+        
+        <div class="scroll-wrapper">
+            <div class="scroll-hint scroll-hint-left">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            
+            <div class="scroll-container">
+                <div class="scrollable-content">
+                    <div class="movie-card">
+                        <a href="../movies/tsotsi.html" class="card-link">
+                            <div class="rental-tag">R30</div>
+                            <img src="pictures\movies pictures\Tsotsi.jpeg" alt="Tsotsi">
+                            <div class="movie-info">
+                                <h3 class="movie-title">Tsotsi</h3>
+                                <p class="movie-year">2005</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="movie-card">
+                        <a href="../movies/yesterday.html" class="card-link">
+                            <div class="rental-tag">R20</div>
+                            <img src="pictures\movies pictures\yesterday.jpeg" alt="Yesterday">
+                            <div class="movie-info">
+                                <h3 class="movie-title">Yesterday</h3>
+                                <p class="movie-year">2004</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="movie-card">
+                        <a href="../movies/mandela-long-walk-to-freedom.html" class="card-link">
+                            <div class="rental-tag">R25</div>
+                            <img src="pictures\movies pictures\mandela.jpeg" alt="Mandela: Long Walk to Freedom">
+                            <div class="movie-info">
+                                <h3 class="movie-title">Mandela: Long Walk to Freedom</h3>
+                                <p class="movie-year">2013</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="movie-card">
+                        <a href="../movies/life-above-all.html" class="card-link">
+                            <div class="rental-tag">R20</div>
+                            <img src="pictures\movies pictures\LifeAboveAll.jpeg" alt="Life, Above All">
+                            <div class="movie-info">
+                                <h3 class="movie-title">Life, Above All</h3>
+                                <p class="movie-year">2010</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="movie-card">
+                        <a href="../movies/skin.html" class="card-link">
+                            <div class="rental-tag">R25</div>
+                            <img src="pictures\movies pictures\Skin.jpeg" alt="Skin">
+                            <div class="movie-info">
+                                <h3 class="movie-title">Skin</h3>
+                                <p class="movie-year">2008</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="movie-card">
+                        <a href="../movies/skin.html" class="card-link">
+                            <div class="rental-tag">R25</div>
+                            <img src="pictures\movies pictures\FourCorners.jpeg" alt="Four Corners">
+                            <div class="movie-info">
+                                <h3 class="movie-title">Four Corners</h3>
+                                <p class="movie-year">2013</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-hint scroll-hint-right">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Comedy Section -->
+<section id="comedy" class="section genre-section">
+    <div class="container">
+        <h2 class="section-title">Comedy</h2>
+        
+        <div class="scroll-wrapper">
+            <div class="scroll-hint scroll-hint-left">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            
+            <div class="scroll-container">
+                <div class="scrollable-content">
+                    <div class="movie-card">
+                        <a href="../movies/material.html" class="card-link">
+                            <div class="rental-tag">R25</div>
+                            <img src="pictures\movies pictures\Material.jpeg" alt="Material">
+                            <div class="movie-info">
+                                <h3 class="movie-title">Material</h3>
+                                <p class="movie-year">2012</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="movie-card">
+                        <a href="../movies/white-wedding.html" class="card-link">
+                            <div class="rental-tag">R20</div>
+                            <img src="pictures\movies pictures\WhiteWedding.jpeg" alt="White Wedding">
+                            <div class="movie-info">
+                                <h3 class="movie-title">White Wedding</h3>
+                                <p class="movie-year">2009</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="movie-card">
+                        <a href="../movies/keeping-up-with-the-kandasamys.html" class="card-link">
+                            <div class="rental-tag">R25</div>
+                            <img src="pictures\movies pictures\KeepingUp.jpeg" alt="Keeping Up with the Kandasamys">
+                            <div class="movie-info">
+                                <h3 class="movie-title">Keeping Up with the Kandasamys</h3>
+                                <p class="movie-year">2017</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="movie-card">
+                        <a href="../movies/blitz-patrollie.html" class="card-link">
+                            <div class="rental-tag">R20</div>
+                            <img src="pictures\movies pictures\BlitzPatrol.jpeg" alt="Blitz Patrollie">
+                            <div class="movie-info">
+                                <h3 class="movie-title">Blitz Patrollie</h3>
+                                <p class="movie-year">2013</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="movie-card">
+                        <a href="../movies/momentum.html" class="card-link">
+                            <div class="rental-tag">R25</div>
+                            <img src="pictures\movies pictures\FanieFournie.jpeg" alt="Fanie Fourie's Lobola">
+                            <div class="movie-info">
+                                <h3 class="movie-title">Fanie Fourie's Lobola</h3>
+                                <p class="movie-year">2013</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-hint scroll-hint-right">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Action Section -->
+<section id="action" class="section genre-section">
+    <div class="container">
+        <h2 class="section-title">Action</h2>
+        
+        <div class="scroll-wrapper">
+            <div class="scroll-hint scroll-hint-left">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            
+            <div class="scroll-container">
+                <div class="scrollable-content">
+                    <div class="movie-card">
+                        <a href="../movies/district-9.html" class="card-link">
+                            <div class="rental-tag">R25</div>
+                            <img src="pictures\movies pictures\District9.jpeg" alt="District 9">
+                            <div class="movie-info">
+                                <h3 class="movie-title">District 9</h3>
+                                <p class="movie-year">2009</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="movie-card">
+                        <a href="../movies/chappie.html" class="card-link">
+                            <div class="rental-tag">R30</div>
+                            <img src="pictures\movies pictures\chappie.jpeg" alt="Chappie">
+                            <div class="movie-info">
+                                <h3 class="movie-title">Chappie</h3>
+                                <p class="movie-year">2015</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="movie-card">
+                        <a href="../movies/momentum.html" class="card-link">
+                            <div class="rental-tag">R25</div>
+                            <img src="pictures\movies pictures\Momentum.jpeg" alt="Momentum">
+                            <div class="movie-info">
+                                <h3 class="movie-title">Momentum</h3>
+                                <p class="movie-year">2015</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="movie-card">
+                        <a href="../movies/invictus.html" class="card-link">
+                            <div class="rental-tag">R25</div>
+                            <img src="pictures\movies pictures\Invictus.jpeg" alt="Invictus">
+                            <div class="movie-info">
+                                <h3 class="movie-title">Invictus</h3>
+                                <p class="movie-year">2009</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="movie-card">
+                        <a href="../movies/escape-from-pretoria.html" class="card-link">
+                            <div class="rental-tag">R30</div>
+                            <img src="pictures\movies pictures\Escape.jpeg" alt="Escape from Pretoria">
+                            <div class="movie-info">
+                                <h3 class="movie-title">Escape from Pretoria</h3>
+                                <p class="movie-year">2020</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="movie-card">
+                        <a href="../movies/skin.html" class="card-link">
+                            <div class="rental-tag">R25</div>
+                            <img src="pictures\movies pictures\FourCorners.jpeg" alt="Four Corners">
+                            <div class="movie-info">
+                                <h3 class="movie-title">Four Corners</h3>
+                                <p class="movie-year">2013</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-hint scroll-hint-right">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Award Winning Section -->
+<section id="award-winning" class="section genre-section">
+    <div class="container">
+        <h2 class="section-title">Award Winning</h2>
+        
+        <div class="scroll-wrapper">
+            <div class="scroll-hint scroll-hint-left">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            
+            <div class="scroll-container">
+                <div class="scrollable-content">
+                    <div class="movie-card">
+                        <a href="../movies/tsotsi.html" class="card-link">
+                            <div class="rental-tag">R30</div>
+                            <img src="pictures\movies pictures\Tsotsi.jpeg" alt="Tsotsi">
+                            <div class="movie-info">
+                                <h3 class="movie-title">Tsotsi</h3>
+                                <p class="movie-year">2005</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="movie-card">
+                        <a href="../movies/skin.html" class="card-link">
+                            <div class="rental-tag">R25</div>
+                            <img src="pictures\movies pictures\Skin.jpeg" alt="Skin">
+                            <div class="movie-info">
+                                <h3 class="movie-title">Skin</h3>
+                                <p class="movie-year">2008</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="movie-card">
+                        <a href="../movies/life-above-all.html" class="card-link">
+                            <div class="rental-tag">R20</div>
+                            <img src="pictures\movies pictures\LifeAboveAll.jpeg" alt="Life, Above All">
+                            <div class="movie-info">
+                                <h3 class="movie-title">Life, Above All</h3>
+                                <p class="movie-year">2010</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="movie-card">
+                        <a href="../movies/white-wedding.html" class="card-link">
+                            <div class="rental-tag">R20</div>
+                            <img src="pictures\movies pictures\Octopus.jpeg" alt="My Octopus Teacher">
+                            <div class="movie-info">
+                                <h3 class="movie-title">My Octopus Teacher</h3>
+                                <p class="movie-year">2020</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="movie-card">
+                        <a href="../movies/yesterday.html" class="card-link">
+                            <div class="rental-tag">R25</div>
+                            <img src="pictures\movies pictures\FourCorners.jpeg" alt="Four Corners">
+                            <div class="movie-info">
+                                <h3 class="movie-title">Four Corners</h3>
+                                <p class="movie-year">2013</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="movie-card">
+                        <a href="../movies/yesterday.html" class="card-link">
+                            <div class="rental-tag">R20</div>
+                            <img src="pictures\movies pictures\Inxeba.jpeg" alt="Inxeba (The Wound)">
+                            <div class="movie-info">
+                                <h3 class="movie-title">Inxeba (The Wound)</h3>
+                                <p class="movie-year">2017</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-hint scroll-hint-right">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container footer-container">
+        <p class="copyright">© 2025 Watch Sonke. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#" class="footer-link">Terms</a>
+            <a href="#" class="footer-link">Privacy</a>
+            <a href="#" class="footer-link">Contact</a>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+<style>
+    /* Add this to your CSS to maintain card appearance when wrapped in links */
+    .card-link {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+    }
+    
+    .card-link:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    /* Optional hover effect to indicate clickability */
+    .card-link:hover .movie-card {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+    }
+    </style
+</body>
+</html>
